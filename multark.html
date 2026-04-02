@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multark</title>
+    <link rel="stylesheet" href="multark.css">
+</head>
+<body>
+   <section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">MULTARK</h1>
+    <h2 class="hero-headline">
+      THE OMNIPRESENT ARCHITECTURE
+    </h2>
+    <p class="hero-subtext">
+      Total Operations. Total Sovereignty. Layers 0 through 7.
+    </p>
+    <div class="hero-buttons">
+      <a href="#sec-1"><button class="btn-primary">Get Started</button></a>
+    </div>
+  </div>
+  <!-- Robot -->
+  <img src="https://png.pngtree.com/png-clipart/20240909/original/pngtree-business-data-analytics-and-robotic-process-automation-concept-png-image_15979140.png" class="robot-img" />
+</section>
+
+<section id="sec-1"class="story-clean">
+
+  <div class="story-layout">
+
+    <!-- LEFT CONTENT -->
+    <div class="story-content">
+
+      <div class="tag">● MULTARK POSITION STATEMENT</div>
+
+      <h1>
+        We Are Not a <br>
+        <span class="highlight">"Service Provider."</span>
+      </h1>
+
+      <p class="desc">
+        The era of the vendor is over. Multark is the Global Capability Substrate.
+        We execute Total Enterprise Reinvention of enterprises at scale.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>The $27 Trillion Reality</h2>
+
+      <p class="desc">
+        Growth in the Age of AI represents a massive redistribution of global wealth.
+      </p>
+
+      <div class="warning-box">
+        Entities that fail to integrate Sovereign AI are mathematically insolvent.
+      </div>
+
+    </div>
+
+    <div class="stage">
+    <canvas class="particles" id="pc"></canvas>
+
+    <div class="bracket tl"></div>
+    <div class="bracket tr"></div>
+    <div class="bracket bl"></div>
+    <div class="bracket br"></div>
+    <div class="h-scan"></div>
+
+    <div class="rings-wrap">
+      <svg viewBox="0 0 460 460" id="ringsvg">
+        <defs>
+          <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#ff9500"/>
+            <stop offset="50%"  stop-color="#ff4d1a"/>
+            <stop offset="100%" stop-color="#e8001a"/>
+          </linearGradient>
+          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <circle class="arc-deco" cx="230" cy="230" r="215"/>
+        <g id="ticks"></g>
+        <circle class="arc-bg"       cx="230" cy="230" r="190" transform="rotate(-90 230 230)"/>
+        <circle class="arc-progress" cx="230" cy="230" r="190" transform="rotate(-90 230 230)"
+          id="mainArc" stroke-dasharray="1194" stroke-dashoffset="1194"/>
+        <circle id="tipDot" r="10" fill="#ff5500" filter="url(#glow)" cx="230" cy="40"/>
+        <circle class="arc-inner-bg" cx="230" cy="230" r="158" transform="rotate(-90 230 230)"/>
+        <circle class="arc-inner"    cx="230" cy="230" r="158" transform="rotate(-90 230 230)"
+          id="innerArc" stroke-dasharray="993" stroke-dashoffset="993"/>
+      </svg>
+
+      <div class="center">
+        <div class="label-top"><span class="dot"></span>Global AI wealth</div>
+        <div class="num-row">
+          <span class="dollar">$</span>
+          <span class="big-num" id="counter">0</span>
+          <span class="suffix">T+</span>
+        </div>
+        <div class="label-bot">Trillion · redistribution</div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</section>
+
+
+    <script src="multark.js"></script>
+</body>
+
+
+</html>
