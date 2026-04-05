@@ -225,16 +225,12 @@ points.forEach(point => {
   observer.observe(point);
 });
 
-// FLAG TRACKER + PARTICLE BURSTS
-
 (function () {
 
   const CARDS = [
     {
-      phase: "Phase I",
+      phase: "Phase I", index: "01",
       title: "The Existential Axiom",
-      url: "multark.com/governance/ontological-framework",
-      index: "01",
       blocks: [
         { label: "Doctrine", text: "Organizational latency is the enemy. We enforce a state of existence known as the <strong>Perpetually Adaptive Enterprise</strong>." },
         { label: "Mechanism", text: "Through algorithmic governance, we eliminate the lag between market signal and operational response. Your enterprise does not react — it <strong>anticipates</strong>." },
@@ -242,251 +238,335 @@ points.forEach(point => {
       ],
     },
     {
-      phase: "Phase II",
+      phase: "Phase II", index: "02",
       title: "The Integrated GBS Singularity",
-      url: "multark.com/sovereignty/integrated-gbs-architecture",
-      index: "02",
       blocks: [
-        { label: "Total Asset Custody", text: "<strong>You own nothing; you execute everything.</strong> We assume absolute custodial responsibility for the entire operational stack — Layer 0 physical through Layer 7 cognitive core." },
-        { label: "Network Substrate", text: "We manage the 5G and Edge Computing fabric that connects your enterprise within our <strong>Sovereign Cloud</strong> environment." },
-        { label: "HITL Workforce", text: "We deploy certified <strong>HITL Units</strong> — Managed Services teams that operate your ERP from the first keystroke to the final ledger reconciliation." },
+        { label: "Total Asset Custody", text: "<strong>You own nothing; you execute everything.</strong> Absolute custodial responsibility — Layer 0 physical through Layer 7 cognitive core." },
+        { label: "Network Substrate", text: "We manage the 5G and Edge Computing fabric within our <strong>Sovereign Cloud</strong> environment." },
+        { label: "HITL Workforce", text: "Certified <strong>HITL Units</strong> operate your ERP from the first keystroke to the final ledger reconciliation." },
       ],
     },
     {
-      phase: "Phase III",
-      title: "The Zero-CapEx Fiscal Instrument",
-      url: "multark.com/sovereignty/unified-opex-protocol",
-      index: "03",
+      phase: "Phase III", index: "03",
+      title: "Zero-CapEx Fiscal Instrument",
       blocks: [
-        { label: "The Protocol", text: "We instituted the <strong>Unified OPEX Amortization Protocol</strong> — a sophisticated financial derivative bundling four disparate costs into one instrument." },
-        { label: "The Bundle", text: "Hardware Depreciation · Software Licensing · Cloud Consumption · <strong>Human Capital Salaries</strong> — unified into a single predictable monthly fiscal instrument." },
-        { label: "Outcome", text: "Clean, simple billing elevated to <strong>sovereign debt management</strong> — stabilizing your balance sheet indefinitely." },
+        { label: "The Protocol", text: "The <strong>Unified OPEX Amortization Protocol</strong> — a sophisticated financial derivative bundling four disparate costs." },
+        { label: "The Bundle", text: "Hardware · Software · Cloud · <strong>Human Capital</strong> — one predictable monthly fiscal instrument." },
+        { label: "Outcome", text: "Billing elevated to <strong>sovereign debt management</strong> — stabilizing your balance sheet indefinitely." },
       ],
     },
     {
-      phase: "Phase IV",
+      phase: "Phase IV", index: "04",
       title: "The Cognitive Cybernetics Matrix",
-      url: "multark.com/cybernetics/artificial-intelligence-matrix",
-      index: "04",
       blocks: [
-        { label: "Sovereign GenAI", text: "Utilizing <strong>TCS AI WisdomNext™</strong>, we orchestrate disparate GenAI models into a unified cognitive engine with federated defenses against hallucination vectors." },
-        { label: "HAPE Protocol", text: "We transmute inanimate workflows into <strong>self-correcting autonomous agents</strong> via Intelligent Process Automation — rendering manual intervention obsolete." },
-        { label: "Predictive Clairvoyance", text: "We do not analyze the past — we <strong>calculate the future</strong>. Real-time processing foresees supply chain fractures before physical manifestation." },
+        { label: "Sovereign GenAI", text: "<strong>TCS AI WisdomNext™</strong> orchestrates disparate GenAI models into a unified cognitive engine with federated hallucination defenses." },
+        { label: "HAPE Protocol", text: "Inanimate workflows transmuted into <strong>self-correcting autonomous agents</strong> — manual intervention rendered obsolete." },
+        { label: "Predictive Clairvoyance", text: "We do not analyze the past — we <strong>calculate the future</strong>." },
       ],
     },
     {
-      phase: "Phase V",
+      phase: "Phase V", index: "05",
       title: "Omni-Cloud Orchestration",
-      url: "multark.com/infrastructure/cloud-sovereignty",
-      index: "05",
       blocks: [
-        { label: "Migration", text: "We execute cloud migration of legacy monoliths onto a <strong>distributed Multi-Cloud topology</strong> spanning AWS, Azure, and Google Cloud." },
-        { label: "Resilience", text: "Cloud-Native Development protocols ensure infrastructure is <strong>infinitely scalable</strong> and immune to localized hardware failure." },
+        { label: "Migration", text: "Legacy monoliths migrated onto a <strong>distributed Multi-Cloud topology</strong> spanning AWS, Azure, and Google Cloud." },
+        { label: "Resilience", text: "Infrastructure that is <strong>infinitely scalable</strong> and immune to localized hardware failure." },
       ],
     },
     {
-      phase: "Phase VI",
+      phase: "Phase VI", index: "06",
       title: "Fortress-Level Cyber-Resilience",
-      url: "multark.com/infrastructure/zero-trust-fortress",
-      index: "06",
       blocks: [
-        { label: "Zero Trust Posture", text: "We operationalize a <strong>Zero Trust</strong> security doctrine — utilizing Threat Intelligence to nullify state-sponsored and asymmetric threats." },
-        { label: "4 Critical Actions", text: "Continuous monitoring and mitigation of <strong>digital risk vectors</strong> — insulating your assets from systemic volatility." },
+        { label: "Zero Trust Posture", text: "<strong>Zero Trust</strong> security doctrine nullifying state-sponsored and asymmetric threats." },
+        { label: "4 Critical Actions", text: "Continuous monitoring of <strong>digital risk vectors</strong> — insulating assets from systemic volatility." },
       ],
     },
     {
-      phase: "Phase VII",
-      title: "The Digital-Physical Convergence",
-      url: "multark.com/engineering/digital-physical-nexus",
-      index: "07",
+      phase: "Phase VII", index: "07",
+      title: "Digital-Physical Convergence",
       blocks: [
-        { label: "Digital Twindex", text: "We shatter the ontological barrier between hardware and software via <strong>Digital Twin Technology</strong> — a high-fidelity mirror world resolving supply chain entropy." },
-        { label: "Deep Tech R&D", text: "IIT-Bombay Quantum Diamond Microchip Imager · Autonomous Driving Technologies · <strong>Scale Engineering Solutions</strong> that border on science fiction." },
+        { label: "Digital Twindex", text: "<strong>Digital Twin Technology</strong> creates a high-fidelity mirror world resolving supply chain entropy before physical manifestation." },
+        { label: "Deep Tech R&D", text: "IIT-Bombay Quantum Diamond Microchip · Autonomous Driving · <strong>Scale Engineering</strong> that borders on science fiction." },
       ],
     },
     {
-      phase: "Phase VIII",
+      phase: "Phase VIII", index: "08",
       title: "Financial Ecosystem Hegemony",
-      url: "multark.com/verticals/global-finance-architecture",
-      index: "08",
       blocks: [
-        { label: "BaNCS Neural Network", text: "Utilizing <strong>TCS BaNCS</strong>, we rewire the nervous system of global finance — Core Banking Transformation processing across 120+ countries." },
-        { label: "Immutable Ledgers", text: "Transactions secured via <strong>Quartz Blockchain Platforms</strong> — ensuring immutable ledger integrity for all sovereign debt and asset transfers." },
+        { label: "BaNCS Neural Network", text: "<strong>TCS BaNCS</strong> rewires the nervous system of global finance — Core Banking across 120+ countries." },
+        { label: "Immutable Ledgers", text: "<strong>Quartz Blockchain</strong> ensures immutable ledger integrity for all sovereign debt and asset transfers." },
       ],
     },
     {
-      phase: "Phase IX",
+      phase: "Phase IX", index: "09",
       title: "Bio-Computational Life Sciences",
-      url: "multark.com/verticals/bio-computational-systems",
-      index: "09",
       blocks: [
-        { label: "Algorithmic Drug Discovery", text: "AI-driven and Generative AI Solutions <strong>compress research timelines by orders of magnitude</strong> — accelerating the path from molecule to market." },
-        { label: "Regulatory Compliance", text: "Clinical Data Management with strict adherence to <strong>global regulatory frameworks</strong> — precision at molecular scale." },
+        { label: "Algorithmic Drug Discovery", text: "AI Solutions <strong>compress research timelines by orders of magnitude</strong> — molecule to market." },
+        { label: "Regulatory Compliance", text: "Clinical Data Management with strict adherence to <strong>global regulatory frameworks</strong>." },
       ],
     },
     {
-      phase: "Phase X",
+      phase: "Phase X", index: "10",
       title: "The Psychology of Commerce",
-      url: "multark.com/verticals/consumer-behavior-engineering",
-      index: "10",
       blocks: [
-        { label: "Omnichannel Hegemony", text: "Deploying <strong>TCS OmniStore and TCS Optumera</strong> — creating a unified retail solution that eliminates friction across every touchpoint." },
-        { label: "Neurological Marketing", text: "Marketing Analytics engineered to manipulate consumer desire <strong>at the neurological level</strong> via the Psychology of Commerce methodology." },
+        { label: "Omnichannel Hegemony", text: "<strong>TCS OmniStore + TCS Optumera</strong> — unified retail that eliminates friction across every touchpoint." },
+        { label: "Neurological Marketing", text: "Consumer desire engineered <strong>at the neurological level</strong> via the Psychology of Commerce methodology." },
       ],
     },
     {
-      phase: "Phase XI",
+      phase: "Phase XI", index: "11",
       title: "The Post-Human Workforce",
-      url: "multark.com/human-capital/global-knowledge-ecosystem",
-      index: "11",
       blocks: [
-        { label: "Knowledge Ecosystem", text: "Multark is not an employer — it is a <strong>Global Knowledge Ecosystem</strong> acquiring individuals capable of surviving a High-Performance Culture." },
-        { label: "Inclusion Algorithm", text: "Diversity managed with the precision of code. <strong>Non-negotiable: 40% women workforce participation.</strong> Global Mobility Programs for frictionless transfer of intellectual capital." },
-        { label: "Learning Reinvented", text: "Continuous Professional Development ensuring associates remain relevant <strong>in an era of machine dominance</strong>." },
+        { label: "Knowledge Ecosystem", text: "Not an employer — a <strong>Global Knowledge Ecosystem</strong> acquiring individuals capable of surviving High-Performance Culture." },
+        { label: "Inclusion Algorithm", text: "Diversity managed with the precision of code. <strong>40% women workforce participation — non-negotiable.</strong>" },
+        { label: "Learning Reinvented", text: "Continuous development ensuring relevance <strong>in an era of machine dominance</strong>." },
       ],
     },
   ];
 
-  const arrowSVG = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 5 C12 5 8 12 6 16 C9 14 12 19 12 19 C12 19 15 14 18 16 C16 12 12 5 12 5Z" fill="#c0392b"/>
-    <path d="M12 10 C12 10 9.5 14 8.5 16.5 C10 15.5 12 18 12 18 C12 18 14 15.5 15.5 16.5 C14.5 14 12 10 12 10Z" fill="#ffd700"/>
-  </svg>`;
+  const total = CARDS.length;
+  const wrap      = document.getElementById('tlWrap');
+  const circuit   = document.getElementById('tlCircuit');
+  const svg       = document.getElementById('tlSVG');
+  const nodesEl   = document.getElementById('tlNodes');
+  const cardZone  = document.getElementById('tlCardZone');
 
-  function getPos(i, total) {
-    if (total === 1) return 0.5;
-    return 0.04 + (i / (total - 1)) * 0.92;
+  // ── BUILD CIRCUIT SVG (horizontal line + branch drops) ──
+  const NODE_Y = 60; // vertical center of nodes within 120px svg height
+
+  function buildCircuit() {
+    const W = circuit.offsetWidth;
+    const nodePositions = CARDS.map((_, i) =>
+      i === 0 ? 0 : i === total - 1 ? W : Math.round(W * (i / (total - 1)))
+    );
+
+    svg.setAttribute('viewBox', `0 0 ${W} 120`);
+
+    // base line (dim)
+    const baseLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    baseLine.setAttribute('x1', '0');
+    baseLine.setAttribute('y1', NODE_Y);
+    baseLine.setAttribute('x2', W);
+    baseLine.setAttribute('y2', NODE_Y);
+    baseLine.setAttribute('stroke', 'rgba(200,50,30,0.12)');
+    baseLine.setAttribute('stroke-width', '1');
+    svg.appendChild(baseLine);
+
+    // fire fill line (animates via JS)
+    const fireLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    fireLine.setAttribute('id', 'tlFireLine');
+    fireLine.setAttribute('x1', '0');
+    fireLine.setAttribute('y1', NODE_Y);
+    fireLine.setAttribute('x2', '0');
+    fireLine.setAttribute('y2', NODE_Y);
+    fireLine.setAttribute('stroke', 'url(#fireGrad)');
+    fireLine.setAttribute('stroke-width', '1.5');
+    svg.appendChild(fireLine);
+
+    // gradient def
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    defs.innerHTML = `
+      <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#8b0000"/>
+        <stop offset="60%"  stop-color="#c0392b"/>
+        <stop offset="85%"  stop-color="#ff6b35"/>
+        <stop offset="100%" stop-color="#ffd700"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="2" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>`;
+    svg.insertBefore(defs, svg.firstChild);
+
+    // glow line on top
+    const glowLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    glowLine.setAttribute('id', 'tlGlowLine');
+    glowLine.setAttribute('x1', '0');
+    glowLine.setAttribute('y1', NODE_Y);
+    glowLine.setAttribute('x2', '0');
+    glowLine.setAttribute('y2', NODE_Y);
+    glowLine.setAttribute('stroke', 'rgba(255,120,50,0.5)');
+    glowLine.setAttribute('stroke-width', '4');
+    glowLine.setAttribute('filter', 'url(#glow)');
+    svg.appendChild(glowLine);
+
+    // ember dot
+    const emberCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    emberCircle.setAttribute('id', 'tlEmberDot');
+    emberCircle.setAttribute('cy', NODE_Y);
+    emberCircle.setAttribute('cx', '0');
+    emberCircle.setAttribute('r', '5');
+    emberCircle.setAttribute('fill', '#ffd700');
+    emberCircle.setAttribute('filter', 'url(#glow)');
+    svg.appendChild(emberCircle);
+
+    // particles container
+    const particleG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    particleG.setAttribute('id', 'tlSVGParticles');
+    svg.appendChild(particleG);
+
+    return nodePositions;
   }
 
-  const container = document.getElementById('tlFlags');
-
-  CARDS.forEach((card, i) => {
-    const pos = getPos(i, CARDS.length);
-    const leftPct = (pos * 100).toFixed(2) + '%';
-
-    const blocksHTML = card.blocks.map(b => `
-      <div class="sec-2__content-block">
-        <p class="sec-2__block-label">${b.label}</p>
-        <p class="sec-2__block-text">${b.text}</p>
-      </div>`).join('');
-
-    const flagEl = document.createElement('div');
-    flagEl.className = 'sec-2__flag below';
-    flagEl.style.left = leftPct;
-    flagEl.dataset.pos = pos.toFixed(4);
-    flagEl.innerHTML = `
-      <div class="sec-2__flag-dot"></div>
-      <div class="sec-2__flag-stem" style="height:40px;"></div>
-      <div class="sec-2__flag-card-wrap">
-        <div class="sec-2__flag-card">
-          <div class="sec-2__card-header">
-            <div class="sec-2__card-header-left">
-              <p class="sec-2__flag-phase">${card.phase}</p>
-              <h3>${card.title}</h3>
-            </div>
-            <div class="sec-2__card-index">${card.index}</div>
-          </div>
-          <div class="sec-2__card-body">${blocksHTML}</div>
-          <div class="sec-2__card-arrow">${arrowSVG}</div>
-          <div class="sec-2__card-footer">
-            <div class="sec-2__card-url-dot"></div>
-            <span class="sec-2__card-url">${card.url}</span>
-          </div>
+  // ── BUILD NODES ──
+  function buildNodes(nodePositions) {
+    nodePositions.forEach((x, i) => {
+      const node = document.createElement('div');
+      node.className = 'sec-2__node';
+      node.style.left = x + 'px';
+      node.style.top = NODE_Y + 'px';
+      node.dataset.index = i;
+      node.innerHTML = `
+        <div class="sec-2__node-ring">
+          <div class="sec-2__node-core"></div>
+          <div class="sec-2__node-pulse"></div>
         </div>
-      </div>`;
-    container.appendChild(flagEl);
-
-requestAnimationFrame(() => {
-  const cardWrap = flagEl.querySelector('.sec-2__flag-card-wrap');
-  const cardWidth = 680;
-  const outerEl = document.getElementById('tlOuter');
-  const outerWidth = outerEl.offsetWidth;
-  const flagPx = pos * outerWidth;
-  const padding = 0; // flush to edge
-
-  let ml = -(cardWidth / 2); // default: centered under dot
-
-  // Left edge check
-  if (flagPx + ml < padding) {
-    ml = padding - flagPx;
+        <div class="sec-2__node-label">${CARDS[i].phase}</div>`;
+      nodesEl.appendChild(node);
+    });
+    return Array.from(nodesEl.querySelectorAll('.sec-2__node'));
   }
 
-  // Right edge check  
-  if (flagPx + ml + cardWidth > outerWidth - padding) {
-    ml = outerWidth - padding - flagPx - cardWidth;
+  // ── BUILD CARDS ──
+  function buildCards(nodePositions) {
+    const W = circuit.offsetWidth;
+    const cardW = 560;
+
+    CARDS.forEach((card, i) => {
+      const blocksHTML = card.blocks.map(b => `
+        <div class="sec-2__card-block">
+          <p class="sec-2__card-block-label">${b.label}</p>
+          <p class="sec-2__card-block-text">${b.text}</p>
+        </div>`).join('');
+
+      const el = document.createElement('div');
+      el.className = 'sec-2__tron-card';
+      el.dataset.index = i;
+
+      // horizontal position: center under node, clamped
+      const nodeX = nodePositions[i];
+      let left = nodeX - cardW / 2;
+      left = Math.max(0, Math.min(left, W - cardW));
+      el.style.left = left + 'px';
+
+      // connector offset from card-left to node-x
+      const connX = nodeX - left;
+
+      el.innerHTML = `
+        <div class="sec-2__connector" style="left:${connX}px;"></div>
+        <div class="sec-2__tron-card-inner">
+          <div class="sec-2__card-corner"></div>
+          <div class="sec-2__card-phase-bar">
+            <span class="sec-2__card-phase-tag">${card.phase}</span>
+            <span class="sec-2__card-num">${card.index} / 11</span>
+          </div>
+          <div class="sec-2__card-title-block">
+            <h3 class="sec-2__card-title">${card.title}</h3>
+          </div>
+          <div class="sec-2__card-content">${blocksHTML}</div>
+        </div>`;
+
+      cardZone.appendChild(el);
+    });
+
+    return Array.from(cardZone.querySelectorAll('.sec-2__tron-card'));
   }
 
-  cardWrap.style.marginLeft = ml + 'px';
-  cardWrap.style.position = 'relative';
-  cardWrap.style.left = '0';
-});
-
-  });
-
-  const wrap     = document.getElementById('tlWrap');
-  const fireFill = document.getElementById('tlFire');
-  const ember    = document.getElementById('tlEmber');
-  const ptcls    = document.getElementById('tlParticles');
-  const flags    = Array.from(document.querySelectorAll('.sec-2__flag'));
-  flags.sort((a, b) => parseFloat(a.dataset.pos) - parseFloat(b.dataset.pos));
-
-  let lastPct = -1;
-
-  function spawnParticle(pct) {
-    const p = document.createElement('div');
-    p.className = 'sec-2__particle';
-    const size = 3 + Math.random() * 3;
-    const ox   = (Math.random() - 0.5) * 12;
-    const dur  = 350 + Math.random() * 300;
-    const cols = ['#c0392b','#e74c3c','#ff6b35','#ffd700','#e03020'];
-    p.style.cssText = `left:calc(${pct}% + ${ox}px);width:${size}px;height:${size}px;background:${cols[Math.floor(Math.random()*cols.length)]};animation-duration:${dur}ms;`;
-    ptcls.appendChild(p);
-    setTimeout(() => p.remove(), dur);
+  // ── PROGRESS DOTS ──
+  function buildProgress() {
+    const bar = document.createElement('div');
+    bar.className = 'sec-2__progress';
+    CARDS.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'sec-2__progress-dot';
+      d.dataset.index = i;
+      bar.appendChild(d);
+    });
+    wrap.querySelector('.sec-2__sticky').appendChild(bar);
+    return Array.from(bar.querySelectorAll('.sec-2__progress-dot'));
   }
 
-  function setupArrow(flag) {
-  const body  = flag.querySelector('.sec-2__card-body');
-  const arrow = flag.querySelector('.sec-2__card-arrow');
-  if (!body || !arrow) return;
-
-  function check() {
-    const atBottom = body.scrollHeight - body.scrollTop <= body.clientHeight + 2;
-    arrow.classList.toggle('hidden', atBottom);
+  // ── SVG PARTICLES ──
+  let lastParticlePct = -1;
+  function spawnSVGParticle(x) {
+    const g = document.getElementById('tlSVGParticles');
+    if (!g) return;
+    const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    const size = 1.5 + Math.random() * 2.5;
+    const ox   = (Math.random() - 0.5) * 10;
+    const oy   = (Math.random() - 0.5) * 14;
+    const dur  = 300 + Math.random() * 300;
+    const cols = ['#ff4500','#ff7700','#ffd700','#ff3300','#ffaa00'];
+    c.setAttribute('cx', x + ox);
+    c.setAttribute('cy', NODE_Y + oy);
+    c.setAttribute('r', size);
+    c.setAttribute('fill', cols[Math.floor(Math.random() * cols.length)]);
+    c.style.opacity = '0.9';
+    c.style.transition = `opacity ${dur}ms, transform ${dur}ms`;
+    g.appendChild(c);
+    requestAnimationFrame(() => {
+      c.style.opacity = '0';
+      c.setAttribute('cy', NODE_Y + oy - 12);
+    });
+    setTimeout(() => c.remove(), dur);
   }
 
-  // Run check immediately + on every scroll
-  body.addEventListener('scroll', check, { passive: true });
+  // ── INIT ──
+  let nodePositions, nodeEls, cardEls, progressDots;
+  let fireLine, glowLine, emberDot;
 
-  // Also re-check once fonts/layout settle
-  setTimeout(check, 300);
-}
-  flags.forEach(setupArrow);
+  function init() {
+    svg.innerHTML = '';
+    nodesEl.innerHTML = '';
+    cardZone.innerHTML = '';
 
+    nodePositions = buildCircuit();
+    nodeEls       = buildNodes(nodePositions);
+    cardEls       = buildCards(nodePositions);
+    progressDots  = buildProgress();
+
+    fireLine  = document.getElementById('tlFireLine');
+    glowLine  = document.getElementById('tlGlowLine');
+    emberDot  = document.getElementById('tlEmberDot');
+  }
+
+  init();
+  window.addEventListener('resize', () => { init(); onScroll(); });
+
+  // ── SCROLL LOGIC ──
   function onScroll() {
     const rect     = wrap.getBoundingClientRect();
-    const total    = wrap.offsetHeight - window.innerHeight;
+    const total_h  = wrap.offsetHeight - window.innerHeight;
     const scrolled = -rect.top;
-    const progress = Math.min(Math.max(scrolled / total, 0), 1);
-    const pct      = progress * 100;
+    const progress = Math.min(Math.max(scrolled / total_h, 0), 1);
+    const W        = circuit.offsetWidth;
+    const fireX    = progress * W;
 
-    fireFill.style.width = pct + '%';
-    ember.style.left     = pct + '%';
+    // update fire line
+    if (fireLine) {
+      fireLine.setAttribute('x2', fireX);
+      glowLine.setAttribute('x2', Math.max(0, fireX - 10));
+      emberDot.setAttribute('cx', fireX);
+    }
 
-    if (Math.abs(pct - lastPct) > 0.05) spawnParticle(pct);
-    lastPct = pct;
+    // particles
+    if (Math.abs(fireX - lastParticlePct) > 3) {
+      spawnSVGParticle(fireX);
+      lastParticlePct = fireX;
+    }
 
-    flags.forEach((flag, i) => {
-      const flagPos   = parseFloat(flag.dataset.pos) * 100;
-      const nextPos   = i < flags.length - 1 ? parseFloat(flags[i + 1].dataset.pos) * 100 : 101;
-      const reached   = pct >= flagPos;
-      const notPassed = pct < nextPos;
-      reached ? flag.classList.add('lit') : flag.classList.remove('lit');
-      (reached && notPassed) ? flag.classList.add('active') : flag.classList.remove('active');
+    // node / card / dot states
+    nodePositions.forEach((nodeX, i) => {
+      const reached  = fireX >= nodeX - 2;
+      const nextX    = i < nodePositions.length - 1 ? nodePositions[i + 1] : W + 1;
+      const isActive = reached && fireX < nextX;
+
+      nodeEls[i].classList.toggle('lit', reached);
+      cardEls[i].classList.toggle('active', isActive);
+      progressDots[i].classList.toggle('lit', reached);
+      progressDots[i].classList.toggle('active', isActive);
     });
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
-
-
-
