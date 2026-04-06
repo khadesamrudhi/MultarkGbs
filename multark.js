@@ -1,3 +1,5 @@
+
+
 window.addEventListener("load", () => {
   const robot = document.querySelector(".robot-img");
 
@@ -570,3 +572,27 @@ points.forEach(point => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
+
+
+
+const nav    = document.getElementById('mainNav');
+const burger = document.getElementById('navBurger');
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+}, { passive: true });
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      nav.classList.remove('open');
+    }
+  });
+});
